@@ -8,7 +8,7 @@ def home():
  return f"<h1>{MESSAGE}</h1><p>Version 2<p>"
 @app.route("/api/health")
 def health():
- return jsonify(status="ok"
+ return jsonify(status="ok")
 if __name__ == "__main__":
  # Utilisé uniquement en local ; en production, c'est gunicorn qui lance l'app
  port = int(os.environ.get("PORT", 5000))
